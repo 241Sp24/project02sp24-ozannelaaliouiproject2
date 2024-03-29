@@ -2,9 +2,9 @@ package studentdriver;
 
 public abstract class StudentFees {
 
-    private String studentName;
-    private int studentID;
-    private boolean isEnrolled;
+    public String studentName;
+    public int studentID;
+    public boolean isEnrolled;
     int CREDITS_PER_COURSE = 3;
     double PER_CREDIT_FEE = 543.50;
 
@@ -50,5 +50,5 @@ public abstract class StudentFees {
     //      return        ;}
     //@Override
     //public String toString(){
-    //return 
+    //return
 }
