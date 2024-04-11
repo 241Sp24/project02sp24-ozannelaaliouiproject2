@@ -14,15 +14,15 @@ public abstract class StudentFees {
         this.isEnrolled = isEnrolled;
     }
 
-    public String GetStudentName() {
+    public String getStudentName() {
         return studentName;
     }
 
-    public int GetStudentID() {
+    public int getStudentID() {
         return studentID;
     }
 
-    public boolean isIsEnrolled() {
+    public boolean isEnrolled() {
         return isEnrolled;
     }
 
@@ -45,10 +45,12 @@ public abstract class StudentFees {
     public void setIsEnrolled(boolean isEnrolled) {
         this.isEnrolled = isEnrolled;
     }
+    public abstract double getPayableAmount();
+    
+    @Override
+    public String toString(){
+        return "Student name: " + this.studentName + "\nStudent id " + this.studentID + "\nEnrolled: " + this.isEnrolled;
+        }
 
-    // public double getPayableAmount(){
-    //      return        ;}
-    //@Override
-    //public String toString(){
-    //return
+    
 }
